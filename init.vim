@@ -334,3 +334,15 @@ inoremap <D-t>   <Esc>:tabnew<CR>
 
 " Permissions
 cmap w!! %!sudo tee > /dev/null %
+
+set relativenumber
+let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python2_host_prog = '/usr/local/bin/python'
+
+" Macros
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'  RABL DSL                                                                  '
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+au BufRead,BufNewFile *.rabl setf ruby
